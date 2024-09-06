@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Beaufort';
+    src: url('fonts/Beaufort-Regular.woff') format('woff'),
+         url('fonts/Beaufort-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Beaufort';
+    src: url('fonts/Beaufort-Bold.woff') format('woff'),
+         url('fonts/Beaufort-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Spiegel';
+    src: url('fonts/Spiegel-Regular.woff') format('woff'),
+         url('fonts/Spiegel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spiegel';
+    src: url('fonts/Spiegel-Italic.woff') format('woff'),
+         url('fonts/Spiegel-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+body {
+    background-image: url('images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+}
+
+h1 {
+    font-size: 2.5rem; 
+    color: #0A1428; 
+    text-align: center; 
+    letter-spacing: 0.1rem; 
+}
+
+section {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 3rem; 
+}
+
+section input {
+    width: 30rem; 
+    border: none; 
+    padding: 1rem; 
+    border-radius: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+section button {
+    padding: 0.8rem 1.2rem; 
+    border: none; 
+    border-radius: 1.5rem; 
+    background-color: #30475E; 
+    color: #F5F7F8; 
+    font-size: 1rem; 
+    cursor: pointer; 
+}
+
+section button:hover {
+    background-color: #30475E; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.resultados-pesquisa {
+    width: 60rem; 
+    height: 46vh; 
+    overflow-y: auto; 
+    margin-top: 1rem; 
+    padding: 1rem; 
+    border-radius: 0.6rem; 
+}
+
+.item-resultado {
+    display: flex; 
+    align-items: center; 
+    background-color: rgba(10, 20, 40, 0.9); 
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.item-resultado img {
+    width: auto; 
+    height: 100%; 
+    max-height: 200px; 
+    max-width: 200px; 
+    border-radius: 0.6rem; 
+    margin-right: 1rem; 
+    object-fit: cover; 
+}
+
+.item-resultado div {
+    flex-grow: 1; 
+}
+
+.item-resultado h2 a {
+    font-size: 2rem; 
+    color: #B5965E; 
+    margin: 0; 
+    text-decoration: none;
+}
+
+.item-resultado p.descricao-meta {
+    font-size: 1.2rem; 
+    color: #ffffff; 
+    margin: 0.5rem 0 0; 
+    line-height: 1.6; 
+}
+
+footer {
+    background-color: rgba(50, 63, 125, 0.5); 
+    color: #c3cee3; 
+    text-align: center; 
+    padding: 0.5rem 1rem; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 1rem; 
+}
+
+footer p {
+    margin: 0.2rem 0; 
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; 
+        letter-spacing: 0.2rem; 
+    }
+
+    section input {
+        width: 25rem; 
+        padding: 0.8rem; 
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; 
+        height: 40vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.8rem; 
+    }
+
+    .item-resultado p.descricao-meta {
+        font-size: 1.1rem; 
+    }
+
+    .item-resultado img {
+        max-height: 150px; 
+        max-width: 150px; 
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 0.1rem; 
+    }
+
+    section input {
+        width: 17rem; 
+    }
+
+    section button {
+        padding: 0.6rem 1rem; 
+        font-size: 0.9rem; 
+    }
+
+    .resultados-pesquisa {
+        width: 90%; 
+        height: 50vh; 
+    }
+
+    .item-resultado h2 {
+        font-size: 1.6rem; 
+    }
+
+    .item-resultado p.descricao-meta {
+        font-size: 1rem; 
+    }
+
+    .item-resultado img {
+        max-height: 120px; 
+        max-width: 120px; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
+
+/* Estiliza a mensagem de nenhum resultado encontrado */
+.nenhum-resultado {
+    font-size: 1.5rem; 
+    color: #B5965E; 
+    background-color: rgba(10, 20, 40, 0.9); 
+    border-radius: 0.6rem; 
+    padding: 1rem; 
+    text-align: center; 
+    margin: 1rem 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}

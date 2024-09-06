@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicons/favicon-16x16-lol.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Campeões</title>
+    <style>
+        body {
+            background-image: url('images/fundo.jpg');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Escolha o seu <br> CAMPEÃO </h1>
+    </header>
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o nome do Campeão" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+           
+        </section>
+    </main>
+    <footer>
+        <p>2024 - League of Legends. Todos os direitos reservados.</p>
+    </footer>
+    <script defer src="/js/dados.js"></script>
+    <script defer src="./js/app.js"></script>
+</body>
+</html>
