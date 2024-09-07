@@ -40,7 +40,6 @@ Essa aplicação foi criada para fins de aprendizado e diversão. Não se respon
 **Créditos:**
 
 * **League of Legends:** Por criar um universo tão rico e divertido.
-* **Você:** Por ter chegado até aqui e se interessado por este projeto.
 
 **Divirta-se!**
 
