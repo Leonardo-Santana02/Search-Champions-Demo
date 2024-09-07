@@ -146,7 +146,6 @@ footer p {
     margin: 0.2rem 0; 
 }
 
-/* Responsividade para tablets */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; 
@@ -177,7 +176,6 @@ footer p {
     }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8rem; 
@@ -216,7 +214,6 @@ footer p {
     }
 }
 
-/* Estiliza a mensagem de nenhum resultado encontrado */
 .nenhum-resultado {
     font-size: 1.5rem; 
     color: #B5965E; 
