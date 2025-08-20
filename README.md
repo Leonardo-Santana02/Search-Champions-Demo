@@ -1,6 +1,4 @@
-## **README.md**
-
-### **Uma Jornada pelo Mundo de Runeterra**
+## **Uma Jornada pelo Mundo de Runeterra**
 
 **O que faz essa aplicação?**
 
